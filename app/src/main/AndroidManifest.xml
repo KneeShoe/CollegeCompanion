@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.chitraksh_srivastava.collegecompanion">
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/college_companion"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/college_companion"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".calculator_cgpa"/>
+        <activity android:name=".AttendanceOptions"/>
+        <activity android:name=".AttendanceManager"/>
+        <activity android:name=".InputSubject"/>
+        <activity android:name=".ReportCard"/>
+        <activity android:name=".Transistions"/>
+        <activity android:name=".MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>
