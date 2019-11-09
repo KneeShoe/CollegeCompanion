@@ -5,20 +5,200 @@
     android:id="@+id/num2"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MainActivity">
+    tools:context=".MainActivity"
+    android:background="@drawable/cgpacalculatorbackground">
 
 
     <TextView
         android:id="@+id/textView"
-        android:layout_width="180dp"
+        android:layout_width="288dp"
         android:layout_height="wrap_content"
+        android:layout_alignParentTop="false"
         android:layout_centerHorizontal="true"
         android:layout_marginStart="120dp"
-        android:layout_marginTop="4dp"
-        android:text="CGPA Calculator"
+        android:layout_marginTop="24dp"
+        android:fontFamily="@font/fira_sans_extrabold"
+        android:text="SGPA CALCULATOR"
         android:textAlignment="center"
         android:textAllCaps="true"
+        android:textColor="#FFFFFF"
+        android:textSize="30sp"
         android:textStyle="bold" />
+
+
+    //kiuhuihiuhiuhuihiuhihuihiuhi
+
+    <EditText
+        android:id="@+id/avg1"
+        android:layout_width="91dp"
+        android:layout_height="40dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="147dp"
+        android:layout_marginEnd="40dp"
+        android:ems="10"
+        android:hint="0-50"
+        android:inputType="number"
+        android:textSize="10sp" />
+
+    <EditText
+        android:id="@+id/sub1"
+        android:layout_width="125dp"
+        android:layout_height="40dp"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="-216dp"
+        android:layout_marginTop="151dp"
+        android:layout_toEndOf="@+id/editText2"
+        android:ems="10"
+        android:hint="Name"
+        android:inputType="textPersonName"
+        android:textSize="10sp" />
+
+    <EditText
+        android:id="@+id/sub3"
+        android:layout_width="125dp"
+        android:layout_height="40dp"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="-216dp"
+        android:layout_marginTop="250dp"
+        android:layout_toEndOf="@+id/editText2"
+        android:ems="10"
+        android:hint="Name"
+        android:inputType="textPersonName"
+        android:textSize="10sp" />
+
+    <EditText
+        android:id="@+id/sub4"
+        android:layout_width="125dp"
+        android:layout_height="40dp"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="-216dp"
+        android:layout_marginTop="300dp"
+        android:layout_toEndOf="@+id/editText2"
+        android:ems="10"
+        android:hint="Name"
+        android:inputType="textPersonName"
+        android:textSize="10sp" />
+
+    <EditText
+        android:id="@+id/sub5"
+        android:layout_width="125dp"
+        android:layout_height="40dp"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="-216dp"
+        android:layout_marginTop="350dp"
+        android:layout_toEndOf="@+id/editText2"
+        android:ems="10"
+        android:hint="Name"
+        android:inputType="textPersonName"
+        android:textSize="10sp" />
+
+    <EditText
+        android:id="@+id/editText2"
+        android:layout_width="60dp"
+        android:layout_height="40dp"
+        android:layout_above="@+id/sgpa"
+        android:layout_alignParentStart="true"
+        android:layout_centerVertical="true"
+        android:layout_marginStart="171dp"
+        android:layout_marginTop="40dp"
+        android:layout_marginBottom="134dp"
+        android:ems="10"
+        android:hint="1-4"
+        android:inputType="number"
+        android:textSize="10sp" />
+
+    <EditText
+        android:id="@+id/cred1"
+        android:layout_width="60dp"
+        android:layout_height="40dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="174dp"
+        android:layout_marginBottom="540dp"
+        android:ems="10"
+        android:hint="1-4"
+        android:inputType="number"
+        android:textSize="10sp" />
+
+    <EditText
+        android:id="@+id/cred2"
+        android:layout_width="61dp"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@+id/editText2"
+        android:layout_alignParentBottom="true"
+        android:layout_marginLeft="188dp"
+        android:layout_marginTop="150dp"
+        android:layout_marginEnd="-3dp"
+        android:layout_marginBottom="493dp"
+        android:ems="10"
+        android:hint="1-4"
+        android:inputType="number"
+        android:textSize="10sp" />
+
+    <EditText
+        android:id="@+id/cred3"
+        android:layout_width="60dp"
+        android:layout_height="40dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="253dp"
+        android:ems="10"
+        android:hint="1-4"
+        android:inputType="none|number"
+        android:textSize="10sp" />
+
+    <EditText
+        android:id="@+id/avg2"
+        android:layout_width="91dp"
+        android:layout_height="40dp"
+        android:layout_alignEnd="@+id/sub1"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="200dp"
+        android:layout_marginEnd="-224dp"
+        android:ems="10"
+        android:hint="0-50"
+        android:inputType="number"
+        android:textSize="10sp" />
+
+    <EditText
+        android:id="@+id/avg3"
+        android:layout_width="91dp"
+        android:layout_height="40dp"
+        android:layout_alignEnd="@+id/sub1"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="250dp"
+        android:layout_marginEnd="-224dp"
+        android:ems="10"
+        android:hint="0-50"
+        android:inputType="number"
+        android:textSize="10sp" />
+
+    <EditText
+        android:id="@+id/avg4"
+        android:layout_width="91dp"
+        android:layout_height="40dp"
+        android:layout_alignEnd="@+id/sub1"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="300dp"
+        android:layout_marginEnd="-224dp"
+        android:ems="10"
+        android:hint="0-50"
+        android:inputType="number"
+        android:textSize="10sp" />
+
+    <EditText
+        android:id="@+id/avg5"
+        android:layout_width="91dp"
+        android:layout_height="40dp"
+        android:layout_alignEnd="@+id/sub1"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="349dp"
+        android:layout_marginEnd="-224dp"
+        android:ems="10"
+        android:hint="0-50"
+        android:inputType="number"
+        android:textSize="10sp" />
 
     <TextView
         android:id="@+id/textView2"
@@ -26,8 +206,9 @@
         android:layout_height="20dp"
         android:layout_alignStart="@+id/textView4"
         android:layout_alignParentTop="true"
-        android:layout_marginStart="-227dp"
-        android:layout_marginTop="66dp"
+        android:layout_marginStart="-231dp"
+        android:layout_marginTop="115dp"
+        android:fontFamily="@font/fira_sans_extrabold"
         android:text="Subjects"
         android:textAlignment="center"
         android:textStyle="bold" />
@@ -38,8 +219,9 @@
         android:layout_height="wrap_content"
         android:layout_below="@+id/textView4"
         android:layout_alignParentStart="true"
-        android:layout_marginStart="186dp"
-        android:layout_marginTop="-18dp"
+        android:layout_marginStart="183dp"
+        android:layout_marginTop="-17dp"
+        android:fontFamily="@font/fira_sans_extrabold"
         android:text="Credits"
         android:textStyle="bold" />
 
@@ -49,52 +231,11 @@
         android:layout_height="wrap_content"
         android:layout_alignParentTop="true"
         android:layout_alignParentEnd="true"
-        android:layout_marginTop="63dp"
-        android:layout_marginEnd="2dp"
+        android:layout_marginTop="113dp"
+        android:layout_marginEnd="23dp"
+        android:fontFamily="@font/fira_sans_extrabold"
         android:text="Average CIE Score"
         android:textStyle="bold" />
-
-    <EditText
-        android:id="@+id/sub1"
-        android:layout_width="125dp"
-        android:layout_height="40dp"
-        android:layout_alignParentTop="true"
-        android:layout_marginStart="-216dp"
-        android:layout_marginTop="101dp"
-        android:layout_toEndOf="@+id/editText2"
-        android:ems="10"
-        android:hint="Name"
-        android:inputType="textPersonName"
-        android:textSize="10sp" />
-
-    <EditText
-        android:id="@+id/cred1"
-        android:layout_width="60dp"
-        android:layout_height="40dp"
-        android:layout_alignParentStart="true"
-        android:layout_marginStart="177dp"
-        android:layout_marginTop="101dp"
-        android:layout_marginBottom="88dp"
-        android:ems="10"
-        android:hint="1-4"
-        android:inputType="number"
-        android:textSize="10sp" />
-
-
-    <EditText
-        android:id="@+id/avg1"
-        android:layout_width="91dp"
-        android:layout_height="40dp"
-        android:layout_alignEnd="@+id/sub1"
-        android:layout_alignParentTop="true"
-        android:layout_marginTop="101dp"
-        android:layout_marginEnd="-224dp"
-        android:ems="10"
-        android:hint="0-50"
-        android:inputType="number"
-        android:textSize="10sp" />
-
-    //kiuhuihiuhiuhuihiuhihuihiuhi
 
     <EditText
         android:id="@+id/sub2"
@@ -102,160 +243,22 @@
         android:layout_height="40dp"
         android:layout_alignParentTop="true"
         android:layout_marginStart="-216dp"
-        android:layout_marginTop="150dp"
-        android:layout_toEndOf="@+id/editText2"
-        android:ems="10"
-        android:hint="Name"
-        android:inputType="textPersonName"
-        android:textSize="10sp" />
-
-
-    <EditText
-        android:id="@+id/avg2"
-        android:layout_width="91dp"
-        android:layout_height="40dp"
-        android:layout_alignEnd="@+id/sub1"
-        android:layout_alignParentTop="true"
-        android:layout_marginTop="150dp"
-        android:layout_marginEnd="-224dp"
-        android:ems="10"
-        android:hint="0-50"
-        android:inputType="number"
-        android:textSize="10sp" />
-    //kiuhuihiuhiuhuihiuhihuihiuhi
-
-    <EditText
-        android:id="@+id/sub3"
-        android:layout_width="125dp"
-        android:layout_height="40dp"
-        android:layout_alignParentTop="true"
-        android:layout_marginStart="-216dp"
         android:layout_marginTop="200dp"
         android:layout_toEndOf="@+id/editText2"
         android:ems="10"
-        android:inputType="textPersonName"
         android:hint="Name"
-        android:textSize="10sp" />
-
-    <EditText
-        android:id="@+id/cred3"
-        android:layout_width="60dp"
-        android:layout_height="40dp"
-        android:layout_marginStart="178dp"
-        android:layout_marginTop="200dp"
-        android:layout_marginBottom="37dp"
-        android:ems="10"
-        android:hint="1-4"
-        android:inputType="none|number"
+        android:inputType="textPersonName"
         android:textSize="10sp" />
 
 
-    <EditText
-        android:id="@+id/avg3"
-        android:layout_width="91dp"
-        android:layout_height="40dp"
-        android:layout_alignEnd="@+id/sub1"
-        android:layout_alignParentTop="true"
-        android:layout_marginTop="200dp"
-        android:layout_marginEnd="-224dp"
-        android:ems="10"
-        android:hint="0-50"
-        android:inputType="number"
-        android:textSize="10sp" />
     //kiuhuihiuhiuhuihiuhihuihiuhi
 
-    <EditText
-        android:id="@+id/sub4"
-        android:layout_width="125dp"
-        android:layout_height="40dp"
-        android:layout_alignParentTop="true"
-        android:layout_marginStart="-216dp"
-        android:layout_marginTop="250dp"
-        android:layout_toEndOf="@+id/editText2"
-        android:ems="10"
-        android:inputType="textPersonName"
-        android:hint="Name"
-        android:textSize="10sp" />
 
-    <EditText
-        android:id="@+id/cred4"
-        android:layout_width="60dp"
-        android:layout_height="40dp"
-        android:layout_alignParentStart="true"
-        android:layout_marginStart="178dp"
-        android:layout_marginTop="250dp"
-        android:layout_marginBottom="46dp"
-        android:ems="10"
-        android:hint="1-4"
-        android:inputType="number"
-        android:textSize="10sp" />
-
-
-    <EditText
-        android:id="@+id/avg4"
-        android:layout_width="91dp"
-        android:layout_height="40dp"
-        android:layout_alignEnd="@+id/sub1"
-        android:layout_alignParentTop="true"
-        android:layout_marginTop="250dp"
-        android:layout_marginEnd="-224dp"
-        android:ems="10"
-        android:hint="0-50"
-        android:inputType="number"
-        android:textSize="10sp" />
     //kiuhuihiuhiuhuihiuhihuihiuhi
 
-    <EditText
-        android:id="@+id/sub5"
-        android:layout_width="125dp"
-        android:layout_height="40dp"
-        android:layout_alignParentTop="true"
-        android:layout_marginStart="-216dp"
-        android:layout_marginTop="300dp"
-        android:layout_toEndOf="@+id/editText2"
-        android:ems="10"
-        android:inputType="textPersonName"
-        android:hint="Name"
-        android:textSize="10sp" />
 
-    <EditText
-        android:id="@+id/editText2"
-        android:layout_width="60dp"
-        android:layout_height="40dp"
-        android:layout_alignParentStart="true"
-        android:layout_marginStart="178dp"
-        android:layout_marginTop="300dp"
-        android:ems="10"
-        android:hint="1-4"
-        android:inputType="number"
-        android:textSize="10sp" />
+    //kiuhuihiuhiuhuihiuhihuihiuhi
 
-
-    <EditText
-        android:id="@+id/avg5"
-        android:layout_width="91dp"
-        android:layout_height="40dp"
-        android:layout_alignEnd="@+id/sub1"
-        android:layout_alignParentTop="true"
-        android:layout_marginTop="306dp"
-        android:layout_marginEnd="-223dp"
-        android:ems="10"
-        android:hint="0-50"
-        android:inputType="number"
-        android:textSize="10sp" />
-
-    <EditText
-        android:id="@+id/cred2"
-        android:layout_width="61dp"
-        android:layout_height="wrap_content"
-        android:layout_alignEnd="@+id/editText2"
-        android:layout_marginLeft="188dp"
-        android:layout_marginTop="150dp"
-        android:layout_marginEnd="-3dp"
-        android:ems="10"
-        android:hint="1-4"
-        android:inputType="number"
-        android:textSize="10sp" />
 
     <Button
         android:id="@+id/calsgpa"
@@ -267,19 +270,40 @@
         android:layout_marginStart="-165dp"
         android:layout_marginEnd="13dp"
         android:layout_marginBottom="22dp"
+        android:background="@drawable/rounded_button"
         android:onClick="Calc"
         android:text="Calculate SGPA"
         android:textAlignment="center"
+        android:textColor="#FFFFFF"
+        android:textSize="20sp"
         android:textStyle="bold" />
 
     <TextView
         android:id="@+id/sgpa"
-        android:layout_width="180dp"
-        android:layout_height="53dp"
-        android:layout_alignStart="@+id/textView"
-        android:layout_alignParentBottom="true"
-        android:layout_marginBottom="98dp"
+        android:layout_width="173dp"
+        android:layout_height="89dp"
+        android:layout_above="@+id/calsgpa"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="120dp"
+        android:layout_marginEnd="118dp"
+        android:layout_marginBottom="48dp"
         android:textAlignment="center"
-        android:textSize="30sp"
+        android:textColor="#FFFFFF"
+        android:textSize="69sp"
         android:textStyle="bold" />
+
+    <EditText
+        android:id="@+id/cred4"
+        android:layout_width="59dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="175dp"
+        android:layout_marginBottom="396dp"
+        android:ems="10"
+        android:hint="1-4"
+        android:inputType="textPersonName"
+        android:textSize="10sp" />
 </RelativeLayout>
