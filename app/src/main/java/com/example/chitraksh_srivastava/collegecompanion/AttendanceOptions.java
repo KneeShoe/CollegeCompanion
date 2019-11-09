@@ -16,7 +16,8 @@ public class AttendanceOptions extends AppCompatActivity {
         btnsub.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent in=new Intent(AttendanceOptions.this,InputSubject.class);
+                Intent in;
+                in = new Intent(AttendanceOptions.this,subject_card.class);
                 startActivity(in);
             }
         });
@@ -24,7 +25,7 @@ public class AttendanceOptions extends AppCompatActivity {
         btnmanage.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent i=new Intent(AttendanceOptions.this,AttendanceManager.class);
+                Intent i=new Intent(AttendanceOptions.this,subject_card.class);
                 startActivity(i);
             }
         });
