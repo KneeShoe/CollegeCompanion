@@ -9,7 +9,8 @@
         android:roundIcon="@mipmap/college_companion"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".attendance_ld"></activity>
+        <activity android:name=".attendance_Ds"></activity>
+        <activity android:name=".attendance_ld" />
         <activity android:name=".attendance_co" />
         <activity android:name=".attendance_oj" />
         <activity android:name=".attendance_dms" />
@@ -18,10 +19,6 @@
         <activity android:name=".subject_card" />
         <activity android:name=".calculator_cgpa" />
         <activity android:name=".AttendanceOptions" />
-        <activity android:name=".AttendanceManager" />
-        <activity android:name=".InputSubject" />
-        <activity android:name=".ReportCard" />
-        <activity android:name=".Transistions" />
         <activity android:name=".MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />

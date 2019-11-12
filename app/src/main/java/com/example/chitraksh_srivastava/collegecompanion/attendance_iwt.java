@@ -17,7 +17,5 @@ public class attendance_iwt extends AppCompatActivity {
 
 
 
-
-
     }
 }
