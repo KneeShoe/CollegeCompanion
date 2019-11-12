@@ -35,7 +35,7 @@ public class subject_card extends AppCompatActivity implements View.OnClickListe
         Intent i;
         switch(view.getId())
         {
-            case R.id.DS : i = new Intent(this, attendance_ds.class);
+            case R.id.DS : i = new Intent(this, add_subjects.class);
                 startActivity(i);
                 break;
             case R.id.IWT : i = new Intent(this,attendance_iwt.class);

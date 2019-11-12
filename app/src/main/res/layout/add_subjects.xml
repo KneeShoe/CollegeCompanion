@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".attendance_ds"
+    tools:context=".add_subjects"
     android:layout_gravity="center">
 
    <!-- <LinearLayout
@@ -69,26 +69,47 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/total_classes" />
 
-    <TextView
-        android:id="@+id/ca"
-        android:layout_width="123dp"
-        android:layout_height="58dp"
-        android:layout_marginTop="300dp"
-        android:textSize="27sp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.546"
-        app:layout_constraintStart_toEndOf="@+id/class_attended"
-        app:layout_constraintTop_toTopOf="parent" />
+ <EditText
+     android:id="@+id/ca"
+     android:layout_width="161dp"
+     android:layout_height="63dp"
+     android:layout_marginStart="41dp"
+     android:layout_marginTop="303dp"
+     android:layout_marginEnd="16dp"
+     android:ems="10"
+     android:inputType="textPersonName"
+     app:layout_constraintEnd_toEndOf="parent"
+     app:layout_constraintStart_toEndOf="@+id/class_attended"
+     app:layout_constraintTop_toTopOf="parent" />
 
-    <TextView
-        android:id="@+id/tc"
-        android:layout_width="123dp"
-        android:layout_height="58dp"
-        android:layout_marginTop="20dp"
-        android:textSize="27sp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.546"
-        app:layout_constraintStart_toEndOf="@+id/class_attended"
-        app:layout_constraintTop_toBottomOf="@+id/ca" />
+ <EditText
+     android:id="@+id/ta"
+     android:layout_width="161dp"
+     android:layout_height="63dp"
+     android:layout_marginStart="41dp"
+     android:layout_marginTop="16dp"
+     android:layout_marginEnd="16dp"
+     android:ems="10"
+     android:inputType="textPersonName"
+     app:layout_constraintEnd_toEndOf="parent"
+     app:layout_constraintStart_toEndOf="@+id/total_classes"
+     app:layout_constraintTop_toBottomOf="@+id/ca" />
+
+ <Button
+     android:id="@+id/button"
+     android:layout_width="wrap_content"
+     android:layout_height="wrap_content"
+     android:text="Button"
+     tools:layout_editor_absoluteX="172dp"
+     tools:layout_editor_absoluteY="487dp"
+     tools:ignore="MissingConstraints" />
+
+ <Spinner
+     android:id="@+id/subs"
+     android:layout_width="279dp"
+     android:layout_height="25dp"
+     app:layout_constraintEnd_toEndOf="parent"
+     app:layout_constraintStart_toStartOf="parent"
+     tools:layout_editor_absoluteY="138dp" />
 
 </android.support.constraint.ConstraintLayout>
