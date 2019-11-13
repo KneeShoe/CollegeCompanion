@@ -4,104 +4,115 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".attendance_iwt"
-    android:layout_gravity="center">
+    tools:context=".attendance_iwt">
 
-    <!-- <LinearLayout
-         android:id="@+id/linearLayout"
-         android:layout_width="match_parent"
-         android:layout_height="wrap_content"
-         android:gravity="center">
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center">
 
-         <ProgressBar
-             android:id="@+id/prog"
-             style="?android:progressBarStyleHorizontal"
-             android:layout_width="365dp"
-             android:layout_height="300dp"
-             android:layout_gravity="center"
-             android:foregroundGravity="center"
-             android:progress="100"
-             android:progressDrawable="@drawable/circular_green" />
+        <ProgressBar
+            android:id="@+id/prog"
+            style="?android:progressBarStyleHorizontal"
+            android:layout_width="365dp"
+            android:layout_height="300dp"
+            android:layout_gravity="center"
+            android:foregroundGravity="center"
+            android:progress="100"
+            android:progressDrawable="@drawable/circular_green" />
 
-     </LinearLayout> -->
-
+    </LinearLayout>
 
     <TextView
-        android:id="@+id/class_attended"
-        android:layout_width="174dp"
-        android:layout_height="66dp"
-        android:layout_marginStart="33dp"
-        android:layout_marginTop="300dp"
-        android:layout_marginEnd="257dp"
-        android:text="Classes Attended : "
-        android:textSize="24sp"
+        android:id="@+id/percentage"
+        android:layout_width="155dp"
+        android:layout_height="52dp"
+        android:layout_marginTop="36dp"
+        android:autoText="false"
+        android:textAlignment="center"
+        android:textColor="#000000"
+        android:textSize="30sp"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.269"
+        app:layout_constraintHorizontal_bias="0.50"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        tools:ignore="MissingConstraints" />
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout" />
+
+    <TextView
+        android:id="@+id/classes_attended"
+        android:layout_width="122dp"
+        android:layout_height="64dp"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="20dp"
+        android:text="Classes Attended :"
+        android:textSize="25sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/percentage" />
+
+    <TextView
+        android:id="@+id/classes_attended_num"
+        android:layout_width="122dp"
+        android:layout_height="64dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="50dp"
+        android:textSize="30sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/percentage" />
 
     <TextView
         android:id="@+id/total_classes"
-        android:layout_width="174dp"
-        android:layout_height="66dp"
-        android:layout_marginStart="33dp"
-        android:layout_marginTop="16dp"
-        android:layout_marginEnd="257dp"
-        android:text="Total Classes :"
-        android:textSize="24sp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.269"
+        android:layout_width="122dp"
+        android:layout_height="64dp"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="24dp"
+        android:text="Total Classes:"
+        android:textSize="25sp"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/class_attended" />
+        app:layout_constraintTop_toBottomOf="@+id/classes_attended" />
+
+    <TextView
+        android:id="@+id/total_classes_num"
+        android:layout_width="122dp"
+        android:layout_height="64dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="50dp"
+        android:textSize="30sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/classes_attended_num" />
 
     <TextView
         android:id="@+id/estimate"
-        android:layout_width="339dp"
-        android:layout_height="55dp"
-        android:layout_marginTop="8dp"
-        android:layout_marginBottom="20dp"
-        android:hint="Estimate"
-        android:textSize="24sp"
+        android:layout_width="325dp"
+        android:layout_height="84dp"
+        android:layout_marginBottom="15dp"
+        android:hint="Estimate:"
+        android:textSize="25sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.51"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/tick"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="115dp"
+        android:layout_marginTop="7dp"
+        android:background="@drawable/attended_button"
+        android:text="Attended"
+        android:textColor="#FFFFFF"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/total_classes" />
 
-    <EditText
-        android:id="@+id/ca"
-        android:layout_width="161dp"
-        android:layout_height="63dp"
-        android:layout_marginStart="41dp"
-        android:layout_marginTop="303dp"
-        android:layout_marginEnd="16dp"
-        android:ems="10"
-        android:inputType="textPersonName"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toEndOf="@+id/class_attended"
-        app:layout_constraintTop_toTopOf="parent" />
-
-    <EditText
-        android:id="@+id/ta"
-        android:layout_width="161dp"
-        android:layout_height="63dp"
-        android:layout_marginStart="41dp"
-        android:layout_marginTop="16dp"
-        android:layout_marginEnd="16dp"
-        android:ems="10"
-        android:inputType="textPersonName"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toEndOf="@+id/total_classes"
-        app:layout_constraintTop_toBottomOf="@+id/ca" />
-
     <Button
-        android:id="@+id/button"
+        android:id="@+id/untick"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Button"
-        tools:layout_editor_absoluteX="172dp"
-        tools:layout_editor_absoluteY="487dp"
-        tools:ignore="MissingConstraints" />
+        android:layout_marginTop="11dp"
+        android:layout_marginEnd="115dp"
+        android:background="@drawable/missed_button"
+        android:text="MISSED"
+        android:textColor="#FFFFFF"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/total_classes_num" />
 
 </android.support.constraint.ConstraintLayout>
