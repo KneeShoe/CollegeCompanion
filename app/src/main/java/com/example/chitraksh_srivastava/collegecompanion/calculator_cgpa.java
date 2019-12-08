@@ -72,8 +72,4 @@ public class calculator_cgpa extends AppCompatActivity{
             }
         });
     }
-    //public void Calc(View view) {
-
-
-   // }
 }
